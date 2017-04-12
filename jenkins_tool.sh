@@ -17,7 +17,7 @@ done
 
 curl --silent $JOB_STATUS_URL | grep result\":\"SUCCESS > /dev/null
 GREP_RETURN_CODE=$?
-if [ $? -ne 0 ]; then
+if [ $GREP_RETURN_CODE -ne 0 ]; then
     echo Build failed
 else
     echo Build succeeded
