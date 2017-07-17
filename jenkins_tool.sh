@@ -1,4 +1,4 @@
-
+#!/bin/bash
 usage() {
     echo "Usage: $(basename $0) <jenkins_job_name>"
     echo "   Ex: $(basename $0) pitrix-project"
